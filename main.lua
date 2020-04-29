@@ -7,13 +7,13 @@
  @date      17.06.2018 01:34:35 -04
 ]]--
 
-local lgi   = require('lgi') -- requiero esta libreria que me permitira usar GTK
-local GLib  = lgi.GLib -- para el treeview
+local lgi   = require('lgi')            -- requiero esta libreria que me permitira usar GTK
+local GLib  = lgi.GLib                  -- para el treeview
 local Gtk   = lgi.require('Gtk', '3.0') -- el objeto GTK
 
 
 local main_window = Gtk.Dialog {
-   title      = "Diego Clock",
+   title      = "Test Clock",
    resizable  = false
 }
 
