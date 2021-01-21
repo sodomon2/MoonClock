@@ -24,7 +24,7 @@
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">12:44:23</property>
             <attributes>
-              <attribute name="font-desc" value="Sans Bold 30"/>
+              <attribute name="font-desc" value="VT323 Bold 40"/>
             </attributes>
           </object>
           <packing>
