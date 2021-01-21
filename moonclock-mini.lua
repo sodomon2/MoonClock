@@ -12,7 +12,7 @@ local GLib  = lgi.GLib
 local Gtk   = lgi.require('Gtk', '3.0')
 
 local main_window = Gtk.Dialog {
-   title      = "Test Clock",
+   title      = "MoonClock Mini",
    resizable  = false
 }
 
@@ -25,7 +25,7 @@ local content = Gtk.Box {
    border_width = 0,
    Gtk.Label {
       label       = os.date("%H:%M:%S"),
-      id          = "relog",
+      id          = "moonclock",
       use_markup  = false
    }
 }
@@ -35,7 +35,7 @@ main_window:get_content_area():add(content)
 GLib.timeout_add_seconds(
     GLib.PRIORITY_DEFAULT, 1,
    function()
-        content.child.relog.label = os.date("%H:%M:%S")
+        content.child.moonclock.label = os.date("%H:%M:%S")
     return true
 end
 )
