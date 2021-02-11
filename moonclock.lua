@@ -8,8 +8,8 @@
 ]]--
 
 local lgi         = require('lgi')
-local GObject     = lgi.GObject
-local GLib        = lgi.GLib
+local GObject     = lgi.require('GObject', '2.0')
+local GLib        = lgi.require('GLib', '2.0')
 local Gtk         = lgi.require('Gtk', '3.0')
 
 local builder     = Gtk.Builder()

@@ -8,7 +8,7 @@
 ]]--
 
 local lgi   = require('lgi')
-local GLib  = lgi.GLib
+local GLib  = lgi.require('GLib', '2.0')
 local Gtk   = lgi.require('Gtk', '3.0')
 
 local main_window = Gtk.Dialog {
